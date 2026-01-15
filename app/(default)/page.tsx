@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Home - Open PRO",
-  description: "Page description",
+  title: "Eficiencia Solar",
+  description: "Eficiencia Solar del Caribe",
 };
 
 import PageIllustration from "@/components/page-illustration";
