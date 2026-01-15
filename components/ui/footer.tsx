@@ -22,14 +22,14 @@ export default function Footer() {
         <div className="grid grid-cols-2 justify-between gap-12 py-8 sm:grid-rows-[auto_auto] md:grid-cols-4 md:grid-rows-[auto_auto] md:py-12 lg:grid-cols-[repeat(4,minmax(0,140px))_1fr] lg:grid-rows-1 xl:gap-20">
           {/* 1st block */}
           <div className="space-y-2">
-            <h3 className="text-sm font-medium text-gray-200">Product</h3>
+            <h3 className="text-sm font-medium text-gray-200">Producto</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  Features
+                  Características
                 </a>
               </li>
               <li>
@@ -37,7 +37,7 @@ export default function Footer() {
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  Integrations
+                  Integraciones
                 </a>
               </li>
               <li>
@@ -45,7 +45,7 @@ export default function Footer() {
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  Pricing &amp; Plans
+                  Precios y Planes
                 </a>
               </li>
               <li>
@@ -53,7 +53,7 @@ export default function Footer() {
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  Changelog
+                  Registro de Cambios
                 </a>
               </li>
               <li>
@@ -61,7 +61,7 @@ export default function Footer() {
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  Our method
+                  Nuestro método
                 </a>
               </li>
               <li>
@@ -69,21 +69,21 @@ export default function Footer() {
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  User policy
+                  Política de Usuario
                 </a>
               </li>
             </ul>
           </div>
           {/* 2nd block */}
           <div className="space-y-2">
-            <h3 className="text-sm font-medium text-gray-200">Company</h3>
+            <h3 className="text-sm font-medium text-gray-200">Empresa</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  About us
+                  Acerca de nosotros
                 </a>
               </li>
               <li>
@@ -91,7 +91,7 @@ export default function Footer() {
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  Diversity &amp; Inclusion
+                  Diversidad e Inclusión
                 </a>
               </li>
               <li>
@@ -107,7 +107,7 @@ export default function Footer() {
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  Careers
+                  Carreras
                 </a>
               </li>
               <li>
@@ -115,21 +115,21 @@ export default function Footer() {
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  Financial statements
+                  Estados Financieros
                 </a>
               </li>
             </ul>
           </div>
           {/* 3rd block */}
           <div className="space-y-2">
-            <h3 className="text-sm font-medium text-gray-200">Resources</h3>
+            <h3 className="text-sm font-medium text-gray-200">Recursos</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  Community
+                  Comunidad
                 </a>
               </li>
               <li>
@@ -137,7 +137,7 @@ export default function Footer() {
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  Terms of service
+                  Términos de Servicio
                 </a>
               </li>
               <li>
@@ -145,7 +145,7 @@ export default function Footer() {
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  Report a vulnerability
+                  Reportar una Vulnerabilidad
                 </a>
               </li>
             </ul>
@@ -153,7 +153,7 @@ export default function Footer() {
           {/* 4th block */}
           <div className="space-y-2">
             <h3 className="text-sm font-medium text-gray-200">
-              Content Library
+              Biblioteca de Contenido
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
@@ -161,7 +161,7 @@ export default function Footer() {
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  Templates
+                  Plantillas
                 </a>
               </li>
               <li>
@@ -169,7 +169,7 @@ export default function Footer() {
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  Tutorials
+                  Tutoriales
                 </a>
               </li>
               <li>
@@ -177,7 +177,7 @@ export default function Footer() {
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  Knowledge base
+                  Base de Conocimiento
                 </a>
               </li>
               <li>
@@ -185,7 +185,7 @@ export default function Footer() {
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  Learn
+                  Aprender
                 </a>
               </li>
               <li>
@@ -193,7 +193,7 @@ export default function Footer() {
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  Cookie manager
+                  Administrador de Cookies
                 </a>
               </li>
             </ul>
@@ -211,7 +211,7 @@ export default function Footer() {
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  Terms
+                  Términos
                 </a>
               </p>
               <ul className="inline-flex gap-1">

@@ -4,6 +4,7 @@ export const metadata = {
 };
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function SignIn() {
   return (
@@ -64,6 +65,7 @@ export default function SignIn() {
                 or
               </div>
               <button className="btn relative w-full bg-linear-to-b from-gray-800 to-gray-800/60 bg-[length:100%_100%] bg-[bottom] text-gray-300 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-gray-800),var(--color-gray-700),var(--color-gray-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-[length:100%_150%]">
+                <Image src="/svgs/icons8-google.svg" width={16} height={16} alt="Google" className="inline-block mr-2" />
                 Iniciar Sesión con Google
               </button>
             </div>
