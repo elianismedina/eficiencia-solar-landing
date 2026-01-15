@@ -94,7 +94,7 @@ export default function ModalVideo({
               </defs>
             </svg>
             <span className="text-sm font-medium leading-tight text-gray-300">
-              Watch Demo
+              Ver video introductorio
               <span className="text-gray-600"> - </span>
               3:47
             </span>
@@ -126,7 +126,7 @@ export default function ModalVideo({
                 controls
               >
                 <source src={video} type="video/mp4" />
-                Your browser does not support the video tag.
+                Tu navegador no soporta el elemento de video.
               </video>
             </DialogPanel>
           </div>
