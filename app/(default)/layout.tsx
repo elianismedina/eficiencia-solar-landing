@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Footer from "@/components/ui/footer";
+import FabButton from "@/components/ui/fab-button";
 
 export default function DefaultLayout({
   children,
@@ -26,6 +27,7 @@ export default function DefaultLayout({
       <main className="relative flex grow flex-col">{children}</main>
 
       <Footer />
+      <FabButton />
     </>
   );
 }
