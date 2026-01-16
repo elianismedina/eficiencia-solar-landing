@@ -102,7 +102,7 @@ export default function Footer() {
             </div>
             <div className="text-sm">
               <p className="mb-3 text-indigo-200/65">
-                © Eficiencia Solar
+                © Eficiencia Solar del Caribe SAS
                 <span className="text-gray-700"> · </span>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
@@ -116,7 +116,9 @@ export default function Footer() {
                 <li>
                   <a
                     className="text-indigo-200/65 transition hover:text-indigo-500"
-                    href="#0"
+                    href="https://www.facebook.com/Efisolarcaribe/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label="Facebook"
                   >
                     <Image
@@ -131,7 +133,9 @@ export default function Footer() {
                 <li>
                   <a
                     className="text-indigo-200/65 transition hover:text-indigo-500"
-                    href="#0"
+                    href="https://www.instagram.com/eficienciasolarcaribe/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label="Instagram"
                   >
                     <Image
@@ -146,7 +150,9 @@ export default function Footer() {
                 <li>
                   <a
                     className="text-indigo-200/65 transition hover:text-indigo-500"
-                    href="#0"
+                    href="https://www.youtube.com/channel/UCRxsaTiBFHrxYfBhHxtKoCA"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label="YouTube"
                   >
                     <Image
@@ -161,22 +167,9 @@ export default function Footer() {
                 <li>
                   <a
                     className="text-indigo-200/65 transition hover:text-indigo-500"
-                    href="#0"
-                    aria-label="LinkedIn"
-                  >
-                    <Image
-                      src="/svgs/icons8-linkedin.svg"
-                      alt="LinkedIn"
-                      width={48}
-                      height={48}
-                      className="invert"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-indigo-200/65 transition hover:text-indigo-500"
-                    href="#0"
+                    href="https://www.tiktok.com/@eficienciasolarcaribe"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label="TikTok"
                   >
                     <Image
