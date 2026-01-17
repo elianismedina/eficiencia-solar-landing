@@ -5,7 +5,7 @@ import logo from "@/public/images/logo.svg";
 export default function Logo() {
   return (
     <Link href="/" className="inline-flex shrink-0" aria-label="Cruip">
-      <Image src={logo} alt="Efisolar Logo" width={48} height={48} />
+      <Image src={logo} alt="Efisolar Logo" width={60} height={60} />
     </Link>
   );
 }
