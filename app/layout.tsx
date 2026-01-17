@@ -47,9 +47,7 @@ export const metadata = {
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
     ],
-    apple: [
-      { url: "/apple-touch-icon.png" },
-    ],
+    apple: [{ url: "/apple-touch-icon.png" }],
   },
   manifest: "/site.webmanifest",
 };
@@ -61,6 +59,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="F2M3FPqxgH3-CGCh8Umcyhk0ES4uTPlPH_NWU9yEikI"
+        />
+      </head>
       <body
         className={`${inter.variable} ${nacelle.variable} bg-gray-950 font-inter text-base text-gray-200 antialiased`}
       >
