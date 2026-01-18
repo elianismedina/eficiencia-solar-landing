@@ -3,6 +3,14 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { products } from "@/data/products";
 import PageIllustration from "@/components/page-illustration";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 
 export function generateStaticParams() {
   return products.map((product) => ({
@@ -40,7 +48,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
               </Link>
             </div>
 
-            <div className="grid gap-12 md:grid-cols-2 items-start">
+            <div className="grid gap-12 md:grid-cols-2 items-start mb-16">
               {/* Product Image */}
               <div className="relative aspect-square w-full overflow-hidden rounded-xl bg-gray-800/50 border border-gray-700/50">
                 <Image
@@ -105,6 +113,48 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
                 </div>
               </div>
             </div>
+
+            {/* Usage Table Section */}
+            {product.usageData && (
+              <div className="mt-16">
+                <div className="text-center mb-10">
+                  <h2 className="text-2xl font-bold text-gray-100 md:text-3xl mb-4">
+                    ¿Qué puedes alimentar con este Kit Solar?
+                  </h2>
+                  <p className="text-gray-400">
+                    Capacidad real de uso – Kit Solar Híbrido 3 kW / Batería 5.12 kWh
+                  </p>
+                </div>
+                
+                <div className="rounded-xl border border-gray-800 bg-gray-900/50 overflow-hidden">
+                  <Table>
+                    <TableHeader className="bg-gray-800/50">
+                      <TableRow>
+                        <TableHead className="text-gray-100 font-bold py-4">Equipo / Carga</TableHead>
+                        <TableHead className="text-gray-100 font-bold py-4">Consumo típico</TableHead>
+                        <TableHead className="text-gray-100 font-bold py-4">¿Se puede conectar?</TableHead>
+                        <TableHead className="text-gray-100 font-bold py-4">Tiempo aprox. uso*</TableHead>
+                        <TableHead className="text-gray-100 font-bold py-4">Recomendación</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      {product.usageData.map((item, index) => (
+                        <TableRow key={index} className="border-gray-800 hover:bg-gray-800/30">
+                          <TableCell className="font-medium text-gray-200 py-4">{item.equipment}</TableCell>
+                          <TableCell className="text-gray-300 py-4">{item.consumption}</TableCell>
+                          <TableCell className="text-gray-300 py-4">{item.canConnect}</TableCell>
+                          <TableCell className="text-gray-300 py-4">{item.time}</TableCell>
+                          <TableCell className="text-gray-300 py-4">{item.recommendation}</TableCell>
+                        </TableRow>
+                      ))}
+                    </TableBody>
+                  </Table>
+                </div>
+                <div className="mt-4 text-sm text-gray-500 italic">
+                  * Los tiempos son estimados y dependen del estado de carga de la batería y la radiación solar disponible.
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>

@@ -1,3 +1,11 @@
+export interface UsageData {
+  equipment: string;
+  consumption: string;
+  canConnect: string;
+  time: string;
+  recommendation: string;
+}
+
 export interface Product {
   id: string;
   name: string;
@@ -8,28 +16,119 @@ export interface Product {
   specifications: {
     [key: string]: string;
   };
+  usageData?: UsageData[];
 }
 
 export const products: Product[] = [
   {
     id: "1",
-    name: "KIT SOLAR HIBRIDO OFF-GRID 12kW MUST – RENESOLA",
-    sku: "KOF001-1",
-    price: 22700000,
-    priceFormatted: "$ 22.700.000",
+    name: "🔆 KIT SOLAR HÍBRIDO OFF-GRID 3 kW – 110 VAC – 24 V – LITIO 5.12 kWh",
+    sku: "ESC001-1",
+    price: 9400000,
+    priceFormatted: "$9.400.000",
     image: "/images/kitSolar1.png",
     specifications: {
-      "Potencia nominal": "12kW",
-      "Potencia FV instalada": "9760 Wp",
-      "Voltaje nominal AC de salida": "220VAC (L-L), 120VAC (L-N)",
-      "Frecuencia de la red AC": "60Hz",
+      "Potencia nominal": "3 kW",
+      "Potencia FV instalada": "2094 Wp",
+      "Voltaje nominal AC de salida": "110-120 VAC(L-N)",
+      "Frecuencia de la red AC": "50Hz/60Hz Configurable",
       "Generación estimada en un día (para 4 HSP)": "39kWh",
-      "Máx. tensión en el terminal PV": "250VDC",
-      "MPPT": "2",
-      "Tipo de batería": "Litio",
-      "Energía almacenada en batería": "10.2kWh",
-      "Tensión del sistema de batería": "48V",
+      "Tensión máxima de entrada fotovoltaica": "270VDC",
+      "Configuración del campo FV": "1 string de 3 paneles de 630Wp",
+      MPPT: "1",
+      "Tipo de batería": "Litio LifePO4",
+      "Energía nominal de la batería": "5.12 kWh",
+      "Energía utilizable de la batería 80% DoD": "4.1 kWh",
+      "Tensión del sistema de batería": "25.6V",
+      "Capacidad del banco de baterías": "200Ah",
+      "Generación estimada en un día para 4 HSP": "8.4 kWh/día",
       "Monitoreo y configuración remota": "Sí, desde App Móvil",
     },
+    usageData: [
+      {
+        equipment: "💡 Iluminación LED (5–10 focos)",
+        consumption: "50–120 W",
+        canConnect: "✅ Sí",
+        time: "24+ horas",
+        recommendation: "Uso ideal",
+      },
+      {
+        equipment: "📺 TV LED / Smart TV",
+        consumption: "80–150 W",
+        canConnect: "✅ Sí",
+        time: "20–30 horas",
+        recommendation: "Uso ideal",
+      },
+      {
+        equipment: "🌐 Router / Módem",
+        consumption: "10–20 W",
+        canConnect: "✅ Sí",
+        time: "24+ horas",
+        recommendation: "Uso ideal",
+      },
+      {
+        equipment: "💻 Laptop",
+        consumption: "50–100 W",
+        canConnect: "✅ Sí",
+        time: "20+ horas",
+        recommendation: "Uso ideal",
+      },
+      {
+        equipment: "🖥️ PC de escritorio",
+        consumption: "150–300 W",
+        canConnect: "✅ Sí",
+        time: "8–12 horas",
+        recommendation: "Uso normal",
+      },
+      {
+        equipment: "❄️ Nevera eficiente (inverter)",
+        consumption: "100–200 W (prom.)",
+        canConnect: "✅ Sí",
+        time: "8–10 horas nocturnas",
+        recommendation: "Uso recomendado",
+      },
+      {
+        equipment: "🧺 Lavadora (sin calentador)",
+        consumption: "500–800 W",
+        canConnect: "⚠️ Sí",
+        time: "Uso puntual",
+        recommendation: "Preferible con sol",
+      },
+      {
+        equipment: "☕ Cafetera / Licuadora",
+        consumption: "600–900 W",
+        canConnect: "⚠️ Sí",
+        time: "Uso corto",
+        recommendation: "Preferible con sol",
+      },
+      {
+        equipment: "🍽️ Microondas",
+        consumption: "800–1200 W",
+        canConnect: "⚠️ Sí",
+        time: "5–15 min",
+        recommendation: "Uso ocasional",
+      },
+      {
+        equipment: "❄️ Aire acondicionado inverter 9k–12k BTU",
+        consumption: "700–1200 W",
+        canConnect: "⚠️ Limitado",
+        time: "1–3 horas",
+        recommendation: "Solo con sol",
+      },
+      {
+        equipment: "🔥 Estufa / Horno eléctrico",
+        consumption: ">1500 W",
+        canConnect: "❌ No",
+        time: "—",
+        recommendation: "No compatible",
+      },
+      {
+        equipment: "🚿 Ducha eléctrica",
+        consumption: ">3000 W",
+        canConnect: "❌ No",
+        time: "—",
+        recommendation: "No compatible",
+      },
+    ],
   },
 ];
