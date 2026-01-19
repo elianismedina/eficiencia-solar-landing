@@ -22,7 +22,7 @@ export interface Product {
 export const products: Product[] = [
   {
     id: "1",
-    name: "🔆 KIT SOLAR HÍBRIDO OFF-GRID 3 kW – 110 VAC – 24 V – LITIO 5.12 kWh",
+    name: "🔆 KIT SOLAR HÍBRIDO OFF-GRID 3 kW",
     sku: "ESC001-1",
     price: 9400000,
     priceFormatted: "$9.400.000",
@@ -133,7 +133,7 @@ export const products: Product[] = [
   },
   {
     id: "2",
-    name: "🔆 KIT SOLAR HÍBRIDO OFF-GRID 6 kW – 240 VAC – 48 V – LITIO 10.24 kWh",
+    name: "🔆 KIT SOLAR HÍBRIDO OFF-GRID 6 kW",
     sku: "ESC008-6KW",
     price: 18900000,
     priceFormatted: "$16.900.000",
