@@ -247,8 +247,8 @@ export const products: Product[] = [
     id: "3",
     name: "🔆 KIT SOLAR HÍBRIDO OFF-GRID 12 kW",
     sku: "ESC012-12KW",
-    price: 37000000,
-    priceFormatted: "$37.000.000",
+    price: 36900000,
+    priceFormatted: "$36.900.000",
     image: "/images/kitSolar3.png",
     specifications: {
       "Potencia nominal del inversor": "12 kW",
