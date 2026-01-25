@@ -18,7 +18,11 @@ export function generateStaticParams() {
   }));
 }
 
-export default async function ProductPage({ params }: { params: Promise<{ id: string }> }) {
+export default async function ProductPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
   const { id } = await params;
   const product = products.find((p) => p.id === id);
 
@@ -72,9 +76,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
                   <div className="text-3xl font-bold text-indigo-400">
                     {product.priceFormatted}
                   </div>
-                  <div className="mt-2 text-sm text-gray-400">
-                    IVA Incluido
-                  </div>
+                  <div className="mt-2 text-sm text-gray-400">IVA Incluido</div>
                 </div>
 
                 <div className="border-t border-gray-700/50 pt-8">
@@ -82,19 +84,21 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
                     Especificaciones del Sistema
                   </h2>
                   <div className="space-y-4">
-                    {Object.entries(product.specifications).map(([key, value]) => (
-                      <div
-                        key={key}
-                        className="flex flex-col sm:flex-row sm:justify-between py-2 border-b border-gray-800 last:border-0"
-                      >
-                        <span className="text-gray-400 font-medium mb-1 sm:mb-0">
-                          {key}
-                        </span>
-                        <span className="text-gray-200 text-right">
-                          {value}
-                        </span>
-                      </div>
-                    ))}
+                    {Object.entries(product.specifications).map(
+                      ([key, value]) => (
+                        <div
+                          key={key}
+                          className="flex flex-col sm:flex-row sm:justify-between py-2 border-b border-gray-800 last:border-0"
+                        >
+                          <span className="text-gray-400 font-medium mb-1 sm:mb-0">
+                            {key}
+                          </span>
+                          <span className="text-gray-200 text-right">
+                            {value}
+                          </span>
+                        </div>
+                      ),
+                    )}
                   </div>
                 </div>
 
@@ -122,36 +126,61 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
                     ¿Qué puedes alimentar con este Kit Solar?
                   </h2>
                   <p className="text-gray-400">
-                    Capacidad real de uso – Kit Solar Híbrido 3 kW / Batería 5.12 kWh
+                    Capacidad real de uso estimada basada en la configuración
+                    del sistema
                   </p>
                 </div>
-                
+
                 <div className="rounded-xl border border-gray-800 bg-gray-900/50 overflow-hidden">
                   <Table>
                     <TableHeader className="bg-gray-800/50">
                       <TableRow>
-                        <TableHead className="text-gray-100 font-bold py-4">Equipo / Carga</TableHead>
-                        <TableHead className="text-gray-100 font-bold py-4">Consumo típico</TableHead>
-                        <TableHead className="text-gray-100 font-bold py-4">¿Se puede conectar?</TableHead>
-                        <TableHead className="text-gray-100 font-bold py-4">Tiempo aprox. uso*</TableHead>
-                        <TableHead className="text-gray-100 font-bold py-4">Recomendación</TableHead>
+                        <TableHead className="text-gray-100 font-bold py-4">
+                          Equipo / Carga
+                        </TableHead>
+                        <TableHead className="text-gray-100 font-bold py-4">
+                          Consumo típico
+                        </TableHead>
+                        <TableHead className="text-gray-100 font-bold py-4">
+                          ¿Se puede conectar?
+                        </TableHead>
+                        <TableHead className="text-gray-100 font-bold py-4">
+                          Tiempo aprox. uso*
+                        </TableHead>
+                        <TableHead className="text-gray-100 font-bold py-4">
+                          Recomendación
+                        </TableHead>
                       </TableRow>
                     </TableHeader>
                     <TableBody>
                       {product.usageData.map((item, index) => (
-                        <TableRow key={index} className="border-gray-800 hover:bg-gray-800/30">
-                          <TableCell className="font-medium text-gray-200 py-4">{item.equipment}</TableCell>
-                          <TableCell className="text-gray-300 py-4">{item.consumption}</TableCell>
-                          <TableCell className="text-gray-300 py-4">{item.canConnect}</TableCell>
-                          <TableCell className="text-gray-300 py-4">{item.time}</TableCell>
-                          <TableCell className="text-gray-300 py-4">{item.recommendation}</TableCell>
+                        <TableRow
+                          key={index}
+                          className="border-gray-800 hover:bg-gray-800/30"
+                        >
+                          <TableCell className="font-medium text-gray-200 py-4">
+                            {item.equipment}
+                          </TableCell>
+                          <TableCell className="text-gray-300 py-4">
+                            {item.consumption}
+                          </TableCell>
+                          <TableCell className="text-gray-300 py-4">
+                            {item.canConnect}
+                          </TableCell>
+                          <TableCell className="text-gray-300 py-4">
+                            {item.time}
+                          </TableCell>
+                          <TableCell className="text-gray-300 py-4">
+                            {item.recommendation}
+                          </TableCell>
                         </TableRow>
                       ))}
                     </TableBody>
                   </Table>
                 </div>
                 <div className="mt-4 text-sm text-gray-500 italic">
-                  * Los tiempos son estimados y dependen del estado de carga de la batería y la radiación solar disponible.
+                  * Los tiempos son estimados y dependen del estado de carga de
+                  la batería y la radiación solar disponible.
                 </div>
               </div>
             )}
