@@ -39,7 +39,7 @@ export default async function ProductPage({
             <div className="mb-8">
               <Link
                 href="/store"
-                className="text-indigo-400 hover:text-indigo-300 transition-colors inline-flex items-center"
+                className="text-yellow-300 hover:text-yellow-200 transition-colors inline-flex items-center"
               >
                 <svg
                   className="w-4 h-4 mr-2 fill-current"
@@ -67,16 +67,18 @@ export default async function ProductPage({
               {/* Product Details */}
               <div className="space-y-8">
                 <div>
-                  <div className="mb-2 text-sm font-medium text-indigo-400 uppercase tracking-wider">
+                  <div className="mb-2 text-sm font-medium text-yellow-300 uppercase tracking-wider">
                     SKU: {product.sku}
                   </div>
                   <h1 className="text-3xl font-bold text-gray-100 md:text-4xl mb-4">
                     {product.name}
                   </h1>
-                  <div className="text-3xl font-bold text-indigo-400">
+                  <div className="text-3xl font-bold text-yellow-400">
                     {product.priceFormatted}
                   </div>
-                  <div className="mt-2 text-sm text-gray-400">IVA Incluido</div>
+                  <div className="mt-2 text-sm text-yellow-200/65">
+                    IVA Incluido
+                  </div>
                 </div>
 
                 <div className="border-t border-gray-700/50 pt-8">
@@ -90,7 +92,7 @@ export default async function ProductPage({
                           key={key}
                           className="flex flex-col sm:flex-row sm:justify-between py-2 border-b border-gray-800 last:border-0"
                         >
-                          <span className="text-gray-400 font-medium mb-1 sm:mb-0">
+                          <span className="text-yellow-200/65 font-medium mb-1 sm:mb-0">
                             {key}
                           </span>
                           <span className="text-gray-200 text-right">
@@ -107,11 +109,11 @@ export default async function ProductPage({
                     href="https://wa.me/573239398511"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn w-full bg-linear-to-t from-indigo-600 to-indigo-500 text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] hover:bg-[length:100%_150%] text-lg py-3 flex items-center justify-center"
+                    className="btn w-full bg-linear-to-t from-yellow-600 to-yellow-500 text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] hover:bg-[length:100%_150%] text-lg py-3 flex items-center justify-center"
                   >
                     Contactar un asesor
                   </Link>
-                  <p className="mt-4 text-center text-sm text-gray-400">
+                  <p className="mt-4 text-center text-sm text-yellow-200/65">
                     ¿Tienes dudas sobre este kit? Nuestros expertos te ayudan.
                   </p>
                 </div>
@@ -125,7 +127,7 @@ export default async function ProductPage({
                   <h2 className="text-2xl font-bold text-gray-100 md:text-3xl mb-4">
                     ¿Qué puedes alimentar con este Kit Solar?
                   </h2>
-                  <p className="text-gray-400">
+                  <p className="text-yellow-200/65">
                     Capacidad real de uso estimada basada en la configuración
                     del sistema
                   </p>
@@ -178,7 +180,7 @@ export default async function ProductPage({
                     </TableBody>
                   </Table>
                 </div>
-                <div className="mt-4 text-sm text-gray-500 italic">
+                <div className="mt-4 text-sm text-yellow-200/50 italic">
                   * Los tiempos son estimados y dependen del estado de carga de
                   la batería y la radiación solar disponible.
                 </div>
