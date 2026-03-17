@@ -75,6 +75,18 @@
       background-position: 200% center;
     }
   }
+
+  --color-yellow-50: #fefce8;
+  --color-yellow-100: #fef9c3;
+  --color-yellow-200: #fef08a;
+  --color-yellow-300: #fde047;
+  --color-yellow-400: #facc15;
+  --color-yellow-500: #f0d117; /* Brand Yellow from Logo */
+  --color-yellow-600: #ca8a04;
+  --color-yellow-700: #a16207;
+  --color-yellow-800: #854d0e;
+  --color-yellow-900: #713f12;
+  --color-yellow-950: #422006;
 }
 
 /*

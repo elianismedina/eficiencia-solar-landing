@@ -25,7 +25,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-yellow-200/65 transition hover:text-yellow-500"
                   href="#0"
                 >
                   Diseño e Ingeniería
@@ -33,7 +33,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-yellow-200/65 transition hover:text-yellow-500"
                   href="#0"
                 >
                   Instalación Fotovoltaica
@@ -41,7 +41,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-yellow-200/65 transition hover:text-yellow-500"
                   href="#0"
                 >
                   Mantenimiento
@@ -49,7 +49,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-yellow-200/65 transition hover:text-yellow-500"
                   href="#0"
                 >
                   Consultoría
@@ -63,7 +63,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-yellow-200/65 transition hover:text-yellow-500"
                   href="#0"
                 >
                   Quiénes Somos
@@ -71,7 +71,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-yellow-200/65 transition hover:text-yellow-500"
                   href="#0"
                 >
                   Proyectos
@@ -79,7 +79,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-yellow-200/65 transition hover:text-yellow-500"
                   href="#0"
                 >
                   Contacto
@@ -87,7 +87,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-yellow-200/65 transition hover:text-yellow-500"
                   href="#0"
                 >
                   Política de Privacidad
@@ -101,11 +101,11 @@ export default function Footer() {
               <Logo />
             </div>
             <div className="text-sm">
-              <p className="mb-3 text-indigo-200/65">
+              <p className="mb-3 text-yellow-200/65">
                 © Eficiencia Solar del Caribe SAS
                 <span className="text-gray-700"> · </span>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-yellow-200/65 transition hover:text-yellow-500"
                   href="#0"
                 >
                   Todos los derechos reservados
@@ -115,7 +115,7 @@ export default function Footer() {
               <ul className="inline-flex gap-1">
                 <li>
                   <a
-                    className="text-indigo-200/65 transition hover:text-indigo-500"
+                    className="text-yellow-200/65 transition hover:text-yellow-500"
                     href="https://www.facebook.com/Efisolarcaribe/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -132,7 +132,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    className="text-indigo-200/65 transition hover:text-indigo-500"
+                    className="text-yellow-200/65 transition hover:text-yellow-500"
                     href="https://www.instagram.com/eficienciasolarcaribe/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -149,7 +149,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    className="text-indigo-200/65 transition hover:text-indigo-500"
+                    className="text-yellow-200/65 transition hover:text-yellow-500"
                     href="https://www.youtube.com/channel/UCRxsaTiBFHrxYfBhHxtKoCA"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -166,7 +166,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    className="text-indigo-200/65 transition hover:text-indigo-500"
+                    className="text-yellow-200/65 transition hover:text-yellow-500"
                     href="https://www.tiktok.com/@eficienciasolarcaribe"
                     target="_blank"
                     rel="noopener noreferrer"

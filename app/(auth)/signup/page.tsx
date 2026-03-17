@@ -13,7 +13,7 @@ export default function SignUp() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="pb-12 text-center">
-            <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+            <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-yellow-200),var(--color-gray-50),var(--color-yellow-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
               Crear una cuenta
             </h1>
           </div>
@@ -22,7 +22,7 @@ export default function SignUp() {
             <div className="space-y-5">
               <div>
                 <label
-                  className="mb-1 block text-sm font-medium text-indigo-200/65"
+                  className="mb-1 block text-sm font-medium text-yellow-200/65"
                   htmlFor="name"
                 >
                   Nombre <span className="text-red-500">*</span>
@@ -37,7 +37,7 @@ export default function SignUp() {
               </div>
               <div>
                 <label
-                  className="mb-1 block text-sm font-medium text-indigo-200/65"
+                  className="mb-1 block text-sm font-medium text-yellow-200/65"
                   htmlFor="name"
                 >
                   Nombre de la Empresa <span className="text-red-500">*</span>
@@ -52,7 +52,7 @@ export default function SignUp() {
               </div>
               <div>
                 <label
-                  className="mb-1 block text-sm font-medium text-indigo-200/65"
+                  className="mb-1 block text-sm font-medium text-yellow-200/65"
                   htmlFor="email"
                 >
                   Correo Electrónico de Trabajo <span className="text-red-500">*</span>
@@ -66,7 +66,7 @@ export default function SignUp() {
               </div>
               <div>
                 <label
-                  className="block text-sm font-medium text-indigo-200/65"
+                  className="block text-sm font-medium text-yellow-200/65"
                   htmlFor="password"
                 >
                   Contraseña <span className="text-red-500">*</span>
@@ -80,7 +80,7 @@ export default function SignUp() {
               </div>
             </div>
             <div className="mt-6 space-y-5">
-              <button className="btn w-full bg-linear-to-t from-indigo-600 to-indigo-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] hover:bg-[length:100%_150%]">
+              <button className="btn w-full bg-linear-to-t from-yellow-600 to-yellow-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] hover:bg-[length:100%_150%]">
                 Registrarse
               </button>
               <div className="flex items-center gap-3 text-center text-sm italic text-gray-600 before:h-px before:flex-1 before:bg-linear-to-r before:from-transparent before:via-gray-400/25 after:h-px after:flex-1 after:bg-linear-to-r after:from-transparent after:via-gray-400/25">
@@ -93,9 +93,9 @@ export default function SignUp() {
             </div>
           </form>
           {/* Bottom link */}
-          <div className="mt-6 text-center text-sm text-indigo-200/65">
+          <div className="mt-6 text-center text-sm text-yellow-200/65">
             ¿Ya tienes una cuenta?{" "}
-            <Link className="font-medium text-indigo-500" href="/signin">
+            <Link className="font-medium text-yellow-500" href="/signin">
               Iniciar Sesión
             </Link>
           </div>
