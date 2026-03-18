@@ -2,6 +2,7 @@ import "./css/style.css";
 
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
+import Script from "next/script";
 
 import Header from "@/components/ui/header";
 import PageLoader from "@/components/ui/page-loader";
@@ -66,6 +67,18 @@ export default function RootLayout({
           content="F2M3FPqxgH3-CGCh8Umcyhk0ES4uTPlPH_NWU9yEikI"
         />
       </head>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-CWMC8TYQNY"
+        strategy="afterInteractive"
+      />
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-CWMC8TYQNY');
+        `}
+      </Script>
       <body
         className={`${inter.variable} ${nacelle.variable} bg-gray-950 font-inter text-base text-gray-200 antialiased`}
       >
