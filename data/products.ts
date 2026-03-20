@@ -367,8 +367,8 @@ export const products: Product[] = [
     id: "4",
     name: "🔆 KIT SOLAR OFF-GRID 2 kW",
     sku: "ESC024-2KW",
-    price: 5900000,
-    priceFormatted: "$5.900.000",
+    price: 6900000,
+    priceFormatted: "$6.900.000",
     image: "/images/kitSolar4.png",
     specifications: {
       "Potencia nominal del inversor": "2 kW",
